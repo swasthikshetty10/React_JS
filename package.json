@@ -1,0 +1,24 @@
+{
+  "name": "15project",
+  "version": "1.0.0",
+  "description": "Learn React ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swasthikshetty10/React_JS.git"
+  },
+  "keywords": [
+    "React",
+    "ReactJs",
+    "React_JS"
+  ],
+  "author": "Swasthik SHetty",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/swasthikshetty10/React_JS/issues"
+  },
+  "homepage": "https://github.com/swasthikshetty10/React_JS#readme"
+}
