@@ -1,0 +1,12 @@
+body {
+    background-color: rgb(45, 45, 45);
+}
+
+.ExpenseApp {
+    /* max-width: 60rem; */
+
+    display: flex;
+    justify-content: center;
+
+
+}

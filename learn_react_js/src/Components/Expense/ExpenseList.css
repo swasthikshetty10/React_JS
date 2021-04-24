@@ -1,0 +1,23 @@
+.ExpenseCards {
+    background-color: rgb(209, 238, 238);
+    margin-top: 10px;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+
+.ExpenseCards>h2 {
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Total>p {
+    font-weight: 500;
+    font-size: larger;
+}
+
+.Total {
+    text-align: end;
+    padding-right: 20px;
+}

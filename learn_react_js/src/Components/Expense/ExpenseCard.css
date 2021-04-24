@@ -1,14 +1,25 @@
 .ExpenseCard {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
+    background-color: rgb(116, 208, 137);
+    margin: 10px;
+    border-radius: 10px;
 }
 
 .ExpenseCard>div {
-    padding-inline: 4px;
+    padding-inline: 15px;
 }
 
+.ExpenseCard>div>p {
+    font-weight: 500;
+
+}
 
 .ExpenseDate {
     display: flex;
+}
+
+.ExpenseTitle {
+    align-items: baseline;
 }

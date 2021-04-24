@@ -20,11 +20,23 @@ function ExpenseForm(props) {
     const submitHandler = (event) => {
         event.preventDefault();
         console.log(event)
-        props.onSaveExpenseData(ExpenseData)  
+        if(enteredExpense != "" && enteredAmount != ""){
+            if (enteredDate === ""){
+                props.onSaveExpenseData( {...ExpenseData, date : new Date()})
+            }else(
+                props.onSaveExpenseData(ExpenseData)  
+            )
+            
+            event.target[0].value = ""
+            event.target[1].value = ""
+            event.target[2].value = ""
+        }
+        else{
+            alert("Please Fill the Form before submiting")
+        }
+       
         // console.log(event)
-        event.target[0].value = ""
-        event.target[1].value = ""
-        event.target[2].value = ""
+        
     }
     const ExpenseData = { 
     title : enteredExpense,
@@ -35,6 +47,7 @@ function ExpenseForm(props) {
     
     return (
         <div className  = "ExpenseForm">
+            <h2>Add Your Expense</h2>
             <form onSubmit = {submitHandler}>
                 <div className = "add_text">
                     <label>Title: </label>

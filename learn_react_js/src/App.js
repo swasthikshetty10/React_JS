@@ -5,7 +5,9 @@ import Expense from './Components/Expense/Expense'
 function App() {
   return (
     <>
-      <Expense />
+      <div className="ExpenseApp">
+        <Expense />
+      </div>
     </>
 
   );

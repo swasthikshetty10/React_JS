@@ -2,10 +2,63 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: center;
 
 }
 
+.ExpenseForm>h2 {
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.ExpenseForm {
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 20px;
+
+}
 
 .ExpenseForm>form>div {
+
+    display: flex;
+    flex-direction: column;
     padding: 5px;
+}
+
+.ExpenseForm>form>div>button {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+
+}
+
+.ExpenseForm>form>div>button:hover {
+    background-color: #41ba45;
+    /* Green */
+    cursor: pointer;
+
+}
+
+.ExpenseForm>form>div>input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.ExpenseForm>form>div>label {
+    font-weight: 460;
 }
