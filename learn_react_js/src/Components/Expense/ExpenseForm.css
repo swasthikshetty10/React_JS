@@ -1,0 +1,11 @@
+.ExpenseForm>form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+
+.ExpenseForm>form>div {
+    padding: 5px;
+}

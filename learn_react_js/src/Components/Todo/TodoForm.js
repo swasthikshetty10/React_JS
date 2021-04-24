@@ -24,8 +24,6 @@ function TodoForm(props) {
     }
     
     return (
-
-
         <div className  = "TodoForm">
             <form onSubmit = {submitHandler}>
                 <div class = "add_text">

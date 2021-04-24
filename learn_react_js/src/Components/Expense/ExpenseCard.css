@@ -1,0 +1,14 @@
+.ExpenseCard {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ExpenseCard>div {
+    padding-inline: 4px;
+}
+
+
+.ExpenseDate {
+    display: flex;
+}
