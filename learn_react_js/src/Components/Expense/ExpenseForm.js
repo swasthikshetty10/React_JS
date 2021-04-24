@@ -19,7 +19,7 @@ function ExpenseForm(props) {
    // sending upwords from child to parent component
     const submitHandler = (event) => {
         event.preventDefault();
-        console.log(event)
+        // console.log(event)
         if(enteredExpense != "" && enteredAmount != ""){
             if (enteredDate === ""){
                 props.onSaveExpenseData( {...ExpenseData, date : new Date()})
