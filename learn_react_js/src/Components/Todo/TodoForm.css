@@ -1,0 +1,17 @@
+.TodoForm>form {
+    display: flex;
+    justify-content: center;
+
+}
+
+.TodoForm>form>div {
+    padding: 10px;
+}
+
+.TodoForm {
+    text-align: center;
+
+    border-radius: 20px;
+    background-color: antiquewhite;
+
+}

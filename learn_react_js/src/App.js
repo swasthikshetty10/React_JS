@@ -1,9 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import Todo from './Components/Todo/Todo'
 function App() {
   return (
-    <h1 > Hello Mf < /h1>
+    <>
+      <Todo />
+    </>
 
   );
 }
