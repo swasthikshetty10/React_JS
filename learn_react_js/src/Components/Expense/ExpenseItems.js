@@ -31,7 +31,7 @@ function ExpenseItems(props) {
             {props.data.map(items => new Intl.DateTimeFormat('en', { year: 'numeric' }).format(items.date) == toFilter && <ExpenseCard data = {items}/>)} 
             </>
         }
-        return <><h3 style = {{textAlign : 'center' , color : 'red'}}>No Expense Found</h3></>
+        
     }
     
     return (
@@ -49,6 +49,7 @@ function ExpenseItems(props) {
             </select>
             </div>
             <FilterdComponent/>
+            {total === 0 &&<h3 style = {{textAlign : 'center' , color : 'red'}}>No Expense Found</h3>}
             <div className = "Total">
                 <p>Total =  {total} RS</p>
             </div>
