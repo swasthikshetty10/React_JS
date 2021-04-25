@@ -1,9 +1,11 @@
-.chart {
-    padding: 1rem;
-    border-radius: 12px;
-    background-color: #f8dfff;
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
-    height: 10rem;
+.Chart {
+    background-color: rgb(245, 245, 245);
+    margin: 10px;
+}
+
+@media only screen and (max-width: 400) {
+    .Chart {
+        width: 375px;
+
+    }
 }

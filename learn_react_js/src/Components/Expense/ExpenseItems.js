@@ -36,6 +36,7 @@ function ExpenseItems(props) {
     }
     
     return (
+        <>
         <div className  = "ExpenseCards">
             <h2>Your Expenses</h2>
             <div className = "Selector">
@@ -54,8 +55,16 @@ function ExpenseItems(props) {
             <div className = "Total">
                 <p>Total =  {total} RS</p>
             </div>
-            {/* <ExpenseChart data = {props.data}/> */}
+            
         </div>
+        {total > 0 && 
+        <div className = "ExpenseCards">
+          <h2> Visualise Your Expenses </h2>
+            <ExpenseChart data = {props.data}/>
+          </div> }
+       
+        </>
+        
     )
 }
 
