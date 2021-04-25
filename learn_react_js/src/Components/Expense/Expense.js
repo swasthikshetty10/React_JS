@@ -6,12 +6,14 @@ function Expense() {
     const SaveExpenseData =  (ExpenseData) =>{
         console.log(ExpenseData)
         setAllExpense(prevExpenses => {return [ExpenseData, ...allExpense ]})
-    }
 
+    }
+    
     return (
         <div>
             <ExpenseForm onSaveExpenseData = {SaveExpenseData}/>
             <ExpenseItems data = {allExpense} />
+            
         </div>
     )
 }

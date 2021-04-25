@@ -1,6 +1,7 @@
 import React , {useState} from 'react'
 import ExpenseCard from './ExpenseCard'
 import './ExpenseList.css'
+import ExpenseChart from './ExpenseChart'
 function ExpenseItems(props) {
     
     const [total , setTotal] = useState(0)
@@ -53,7 +54,7 @@ function ExpenseItems(props) {
             <div className = "Total">
                 <p>Total =  {total} RS</p>
             </div>
-          
+            {/* <ExpenseChart data = {props.data}/> */}
         </div>
     )
 }

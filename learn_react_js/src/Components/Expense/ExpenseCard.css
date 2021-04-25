@@ -5,6 +5,7 @@
     background-color: rgb(116, 208, 137);
     margin: 10px;
     border-radius: 10px;
+
 }
 
 .ExpenseCard>div {
@@ -16,10 +17,13 @@
 
 }
 
-.ExpenseDate {
-    display: flex;
-}
+.ExpenseDate {}
 
 .ExpenseTitle {
-    align-items: baseline;
+    align-items: center;
+    text-align: left;
+    flex-grow: 1;
+    color: black;
+    border-left: 10px;
+    border-color: antiquewhite;
 }

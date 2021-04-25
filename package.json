@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/swasthikshetty10/React_JS/issues"
   },
-  "homepage": "https://github.com/swasthikshetty10/React_JS#readme"
+  "homepage": "https://github.com/swasthikshetty10/React_JS#readme",
+  "dependencies": {
+    "chart.js": "^3.2.0",
+    "react-chartjs-2": "^3.0.2"
+  }
 }

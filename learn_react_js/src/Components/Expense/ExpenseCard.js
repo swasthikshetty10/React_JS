@@ -1,7 +1,7 @@
 import React from 'react'
 import "./ExpenseCard.css"
 function ExpenseCard(props) {
-    console.log(props);
+    // console.log(props);
     let d = props.data.date
     let ye = new Intl.DateTimeFormat('en', { year: 'numeric' }).format(d);
     let mo = new Intl.DateTimeFormat('en', { month: 'short' }).format(d);

@@ -4,12 +4,13 @@ import Todolist from './Todolist'
 import TodoForm from "./TodoForm"
 function Todo() {
 
-    const SaveTodoDataHandller = (enteredTodoData) => {  //eventlistner from child coponet it will be triggerd whenever child calls this function  
+    const SaveTodoDataHandller = (enteredTodoData) => {  //eventlistner from child componet it will be triggerd whenever child calls this function  
         const TodoData = {
             ...enteredTodoData,
             id: Math.random.toString()
         };
         console.log(TodoData);
+        
     }
 
     return (
