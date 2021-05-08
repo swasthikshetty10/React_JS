@@ -25,8 +25,10 @@ function Expense() {
     const SaveExpenseData =  (ExpenseData) =>{
         
         console.log(ExpenseData)
-        setAllExpense( [ExpenseData, ...allExpense ])
-        localStorage.setItem('expenses',JSON.stringify(allExpense));
+        setAllExpense(prev => { 
+            localStorage.setItem('expenses',JSON.stringify([ExpenseData, ...allExpense ]));
+            return [ExpenseData, ...allExpense ]})
+        
 
     }
     
