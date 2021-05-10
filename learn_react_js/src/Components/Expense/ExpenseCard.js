@@ -1,5 +1,6 @@
 import React from 'react'
 import "./ExpenseCard.css"
+import DeleteIcon from '@material-ui/icons/Delete';
 function ExpenseCard(props) {
     // console.log(props);
     let d = props.data.date
@@ -21,6 +22,9 @@ function ExpenseCard(props) {
                 </div>
                 <div className = "ExpenseAmount" >
                     <p>{props.data.amount} Rs</p>
+                </div>
+                <div className = "DeleteBtn" onClick = { () =>  {props.onDelete( props.data.key)}} >  
+                    <DeleteIcon style = {{color :  "red" , marginTop : '50%' }} />
                 </div>
             </div>
         )

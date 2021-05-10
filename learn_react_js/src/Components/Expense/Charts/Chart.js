@@ -6,7 +6,6 @@ function BarChart(props) {
     const dataPointValues = props.dataPoints.map(dataPoint => dataPoint.value);
     const dataPointLabels = props.dataPoints.map(dataPoint => dataPoint.label);
     // const totalMaximum = Math.max(...dataPointValues);
-    console.log(dataPointValues)
     const state = {
         options: {
             theme: {

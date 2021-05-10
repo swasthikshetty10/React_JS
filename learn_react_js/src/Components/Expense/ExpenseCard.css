@@ -14,7 +14,6 @@
 
 .ExpenseCard>div>p {
     font-weight: 500;
-
 }
 
 
@@ -26,4 +25,8 @@
     color: black;
     border-left: 10px;
     border-color: antiquewhite;
+}
+
+.DeleteBtn :hover {
+    cursor: pointer;
 }

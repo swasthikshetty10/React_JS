@@ -21,6 +21,7 @@ function ExpenseForm(props) {
         event.preventDefault();
         // console.log(event)
         if(enteredExpense != "" && enteredAmount != ""){
+            
             if (enteredDate === ""){
                 props.onSaveExpenseData( {...ExpenseData, date : new Date()})
             }else(

@@ -12,9 +12,6 @@ function Expense() {
                 localdata[0][index] = {...element , date : new Date(element.date) }
             });
             setAllExpense(localdata[0])
-        // if(localdata[0].length > 0){    
-        //     setAllExpense(localdata[0]);
-        // }
         }
         catch(error){
             console.log(error);
@@ -31,11 +28,31 @@ function Expense() {
         
 
     }
+    let x = ['f' , 'u' , 'c']
+    let y = x
+    y.pop()
+    console.log(x)
+    const DeleteEntry = (key) => {
+       
+        console.log(key)
+        // let  = new allExpense
+        const allExpense2 = allExpense.filter((element) => element.key !== key)
+        // allExpense2.forEach( (element , index) => {
+        //     console.log( index)
+        //     if (element.key === key ){
+        //         allExpense2.splice(index,1)
+        //         console.log(allExpense2)
+                
+        //     }
+        // })
+        setAllExpense(allExpense2)
+        localStorage.setItem('expenses',JSON.stringify(allExpense2))
+    }
     
     return (
         <div>
             <ExpenseForm onSaveExpenseData = {SaveExpenseData}/>
-            <ExpenseItems data = {allExpense} />
+            <ExpenseItems data = {allExpense} onDelete = {DeleteEntry} />
             
         </div>
     )

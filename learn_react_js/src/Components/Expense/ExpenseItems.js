@@ -6,7 +6,9 @@ function ExpenseItems(props) {
     
     const [total , setTotal] = useState(0)
     const [toFilter , setFilter] = useState("0")
-    
+    const SendBackKey = (key) => {
+        props.onDelete(key)
+    }
     const FilterdComponent = ( ) => {
         if(toFilter === "0"){
             let totalsum = 0
@@ -15,7 +17,7 @@ function ExpenseItems(props) {
             });
             setTotal(totalsum)
             return <>
-            {props.data.map(items => <ExpenseCard data = {items}/>)} 
+            {props.data.map(items => <ExpenseCard data = {items} onDelete = {SendBackKey}/>)} 
             </>
         }
         else {
@@ -29,7 +31,7 @@ function ExpenseItems(props) {
             });
             setTotal(totalsum)
             return <>
-            {props.data.map(items => new Intl.DateTimeFormat('en', { year: 'numeric' }).format(items.date) == toFilter && <ExpenseCard data = {items}/>)} 
+            {props.data.map(items => new Intl.DateTimeFormat('en', { year: 'numeric' }).format(items.date) == toFilter && <ExpenseCard data = {items} onDelete = {SendBackKey}/>)} 
             </>
         }
         
@@ -60,7 +62,7 @@ function ExpenseItems(props) {
         {total > 0 && 
         <div className = "ExpenseCards">
           <h2> Visualise Your Expenses </h2>
-            <ExpenseChart data = {props.data}/>
+            <ExpenseChart data = {props.data}  />
           </div> }
        
         </>
